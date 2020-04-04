@@ -65,7 +65,7 @@ function hold() {
         //update UI
         document.querySelector('#score-' + activePlayer).textContent = finalScore[activePlayer];
         //check if person has won
-        if (finalScore[activePlayer] >= 10) {
+        if (finalScore[activePlayer] >= 100) {
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             document.querySelector('.dice').style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
